@@ -1,20 +1,11 @@
 # EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM AND DISPLAY STRING
 
+### Name: NARESH.V
+### REG No: 212222110027
+### Date: 02/04/2024
 
  ## Aim: To Interface a 16X2 LCD display to ARM controller  , and simulate it in Proteus 
 ## Components required: STM32 CUBE IDE, Proteus 8 simulator .
-## Theory 
-The full form of an ARM is an advanced reduced instruction set computer (RISC) machine, and it is a 32-bit processor architecture expanded by ARM holdings. The applications of an ARM processor include several microcontrollers as well as processors. The architecture of an ARM processor was licensed by many corporations for designing ARM processor-based SoC products and CPUs. This allows the corporations to manufacture their products using ARM architecture. Likewise, all main semiconductor companies will make ARM-based SOCs such as Samsung, Atmel, TI etc.
-
-What is an ARM7 Processor?
-ARM7 processor is commonly used in embedded system applications. Also, it is a balance among classic as well as new-Cortex sequence. This processor is tremendous in finding the resources existing on the internet with excellence documentation offered by NXP Semiconductors. It suits completely for an apprentice to obtain in detail hardware & software design implementation.
- STM32F401xB STM32F401xC ARM® Cortex®-M4 32b MCU+FPU, 105 DMIPS, 256KB Flash/64KB RAM, 11 TIMs, 1 ADC, 11 comm.
-interfaces Datasheet - production data Features
-• Core: ARM® 32-bit Cortex®-M4 CPU with FPU, Adaptive real-time accelerator (ART Accelerator™) allowing 0-wait state execution from Flash memory, frequency up to 84 MHz, memory protection unit, 105 DMIPS/ 1.
-25 DMIPS/MHz (Dhrystone 2.
-1), and DSP instructions
-• Memories – Up to 256 Kbytes of Flash memory – Up to 64 Kbytes of SRAM
-
 
    ## LCD 16X2 
    16×2 LCD is named so because; it has 16 Columns and 2 Rows. There are a lot of combinations available like,
@@ -23,6 +14,9 @@ interfaces Datasheet - production data Features
 All the above mentioned LCD display will have 16 Pins and the programming approach is also the same and hence the choice is left to you. 
 Below is the Pinout and Pin Description of 16x2 LCD Module:
 
+![image](https://user-images.githubusercontent.com/36288975/233858086-7b1a88a2-f941-475c-86c2-b3bae68bdf7e.png)
+![image](https://user-images.githubusercontent.com/36288975/233857710-541ac1c2-786c-4dfc-b7b5-e3a4868a9cb6.png)
+![image](https://user-images.githubusercontent.com/36288975/233857733-05df5dbf-1a1e-479e-85bb-8014a39ad878.png)
 
 4-bit and 8-bit Mode of LCD:
 
@@ -114,15 +108,20 @@ Jump to second line, position 2
 ## Procedure:
  1. click on STM 32 CUBE IDE, the following screen will appear 
 
+
  2. click on FILE, click on new stm 32 project 
 
 3. select the target to be programmed  as shown below and click on next 
 
+
 4.select the program name 
+
 
 5. corresponding ioc file will be generated automatically 
 
+
 6.select the appropriate pins as gipo, in or out, USART or required options and configure 
+
 
 7.click on cntrl+S , automaticall C program will be generated 
 
@@ -134,14 +133,20 @@ Jump to second line, position 2
 
 11. click on debug option 
 
+
+
 12.  Creating Proteus project and running the simulation
 We are now at the last part of step by step guide on how to simulate STM32 project in Proteus.
 
 13. Create a new Proteus project and place STM32F40xx i.e. the same MCU for which the project was created in STM32Cube IDE. 
 14. After creation of the circuit as per requirement as shown below 
 
+
 14. Double click on the the MCU part to open settings. Next to the Program File option, give full path to the Hex file generated using STM32Cube IDE. Then set the external crystal frequency to 8M (i.e. 8 MHz). Click OK to save the changes.
+https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
+
 15. click on debug and simulate using simulation as shown below 
+
 
 ## CIRCUIT DIAGRAM 
 ![image](https://user-images.githubusercontent.com/36288975/233857974-bda6200e-4f88-4e7b-b189-4da80210fa23.png)
@@ -372,15 +377,12 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif /* USE_FULL_ASSERT */
 
 ```
-
 ## Output screen shots of proteus  :
- 
- ![Screenshot 2024-03-30 105625](https://github.com/sasidharan403/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/94154712/df0a10cc-a16f-4663-bc20-c1661fe04c87)
+ ![image](https://github.com/Adchayakiruthika18/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/147139995/78d42919-d694-40ea-8f33-0bef9b740a34)
 
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
- ![Screenshot 2024-03-30 110123](https://github.com/sasidharan403/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/94154712/1b4a14bb-bed0-4d11-a1e3-2aed00ac489d)
+## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+ ![image](https://github.com/Adchayakiruthika18/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/147139995/0959bdea-9571-4f93-8809-ce2c35c4be7b)
 
+ 
 ## Result :
 Interfacing a lcd display with ARM microcontroller are simulated in proteus and the results are verified.
-
